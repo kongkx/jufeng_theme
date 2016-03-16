@@ -1,0 +1,52 @@
+//
+// Icon Font: jufeng
+//
+
+@font-face {
+  font-family: "jufeng";
+  src: url("../fonts/jufeng.eot");
+  src: url("../fonts/jufeng.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/jufeng.woff") format("woff"),
+       url("../fonts/jufeng.ttf") format("truetype"),
+       url("../fonts/jufeng.svg#jufeng") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "jufeng";
+    src: url("../fonts/jufeng.svg#jufeng") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-phone:before,
+.icon-qq:before,
+.icon-wechat:before,
+.icon-weibo:before {
+  display: inline-block;
+  font-family: "jufeng";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-phone:before { content: "\f100"; }
+.icon-qq:before { content: "\f101"; }
+.icon-wechat:before { content: "\f102"; }
+.icon-weibo:before { content: "\f103"; }
+
+$font-jufeng-phone: "\f100";
+$font-jufeng-qq: "\f101";
+$font-jufeng-wechat: "\f102";
+$font-jufeng-weibo: "\f103";

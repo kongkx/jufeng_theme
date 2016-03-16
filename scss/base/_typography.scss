@@ -1,0 +1,27 @@
+// Typography
+// -----------------------------------------------------------------------------
+p {
+  line-height: 1.6em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.em {
+  color: $brand-primary;
+  &.large {
+    font-size: 1.5em;
+  }
+}
+
+a {
+  @extend .global-transition;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: darken($brand-primary, 5%);
+  }
+}

@@ -1,0 +1,146 @@
+// Styles for Nodes
+// -----------------------------------------------------------------------------
+
+.node-article {
+  p {
+    text-indent: 2em;
+  }
+  &.node-teaser {
+    .element-invisible {
+      right: 0;
+    }
+    position: relative;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+
+    .date {
+      display: block;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      color: white;
+      background-color: $brand-primary;
+      padding: 5px;
+      float: left;
+      margin-right: 15px;
+
+      .day {
+        display: block;
+        font-size: 24px;
+      }
+    }
+
+    a {
+      color: inherit;
+      &:hover {
+        color: darken($brand-primary, 5%);
+        text-decoration: none;
+      }
+    }
+    .thumb {
+      float: left;
+    }
+    .content-wrap {
+      margin-left: 85px;
+      background-color: #f3f3f3;
+      position: relative;
+    }
+    .content {
+      max-height: 140px;
+      overflow: hidden;
+      padding: 0 15px;
+    }
+    .links {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+    }
+    @media (max-width: $screen-xs-max) {
+      .date {
+        display: none;
+      }
+      .content-wrap {
+        margin-left: 0;
+      }
+      .content{
+        height: auto;
+      }
+
+    }
+  }
+}
+
+.node-software {
+  &.node-teaser {
+    padding: $padding-base-horizontal 0;
+    p {
+      font-size: 16px;
+      line-height: 2em;
+    }
+
+    .thumb {
+      float: left;
+      margin-right: ( $padding-base-vertical * 2 );
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h2, .btn-download {
+      margin: $padding-base-horizontal 0;
+    }
+    .field-name-field-download-link a {
+      @extend .btn;
+      @extend .btn-download;
+      margin-top: 0;
+    }
+    .update-date {
+      color: #cc0000;
+    }
+  }
+}
+
+.node-kefu {
+  &.node-teaser {
+    position: relative;
+    padding-left: 170px;
+
+    .avatar {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    .title {
+      font-size: 24px;
+      margin: $padding-base-horizontal 0;
+      small {
+        font-size: 14px;
+      }
+    }
+    .content-wrap {
+      position: relative;
+      height: 300px;
+    }
+    .footer {
+      @extend .clearfix;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+
+      .field-name-field-phone {
+        padding: 6px 0;
+        color: #222;
+        font-size: 16px;
+      }
+
+      .footer-left,
+      .footer-right {
+        width: 50%;
+        float: left;
+      }
+      .footer-right .field-name-field-service-link {
+        float: right;
+      }
+    }
+
+  }
+}

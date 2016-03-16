@@ -1,0 +1,61 @@
+// Styles for blocks.
+// -----------------------------------------------------------------------------
+.feature-block {
+  padding: 20px 0;
+  .item {
+
+    a {
+      display: block;
+      padding: 30px;
+      padding-left: 90px;
+      background-color: #eeeeee;
+      color: inherit;
+
+      &:hover {
+        background-color: #d3d3d3;
+        text-decoration: none;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+    }
+
+    .title {
+      display: block;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.block-ticker {
+  color: white;
+  background-color: rgba(0,0,0,.6);
+
+  .view-article_ticker {
+    padding: 20px 0;
+    .views-vTicker-item {
+      font-size: 16px;
+    }
+  }
+}
+
+.block-shortcut {
+  .menu.nav {
+    li {
+      float: left;
+      margin: 5px;
+      background-color: #f3f3f3;
+    }
+  }
+}
+
+//.block-carousel+.block-ticker {
+//  position: absolute;
+//  bottom: 0;
+//  left: 0px;
+//  width: 100%;
+//  z-index: 1005;
+//}

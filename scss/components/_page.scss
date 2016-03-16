@@ -1,0 +1,24 @@
+.jufeng-index {
+  .section {
+    padding: 40px 0;
+
+    @media(max-width: $screen-xs-max) {
+      padding: 20px 0;
+    }
+
+    &:nth-child(even) {
+      background-color: #f4f4f4;
+    }
+
+    .pane-node {
+      .pane-content {
+        min-height: 265px;
+      }
+    }
+  }
+  .panel-pane {
+    @media(max-width: $screen-sm-max) {
+      margin-bottom: 20px;
+    }
+  }
+}

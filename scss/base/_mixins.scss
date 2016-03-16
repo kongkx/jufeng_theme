@@ -1,0 +1,9 @@
+// Mixins
+// -----------------------------------------------------------------------------
+.global-transition {
+  -webkit-transition: background-color 300ms, color 300ms;
+  -moz-transition: background-color 300ms, color 300ms;
+  -ms-transition: background-color 300ms, color 300ms;
+  -o-transition: background-color 300ms, color 300ms;
+  transition: background-color 300ms, color 300ms;
+}

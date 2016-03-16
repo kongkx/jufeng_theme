@@ -1,0 +1,91 @@
+// Styles for Views
+// -----------------------------------------------------------------------------
+
+.promote-article {
+  @extend .clearfix;
+  margin-bottom: 5px;
+  a {
+    color: inherit;
+
+    &:hover {
+      color: darken($brand-primary, 5%);
+    }
+  }
+  .cover-image {
+    float: left;
+    margin-right: 10px;
+  }
+  .title {
+    margin: 0;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+// Styles for cover-pane views
+.cover-pane {
+  @extend .row;
+
+  & > .view-header,
+  & > .view-content {
+    @extend .col-md-6;
+  }
+  .title {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 2em;
+  }
+  .cover {
+    img {
+      @extend .img-responsive;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .view-content {
+
+    .item {
+      margin-bottom: 10px;
+
+      @media (max-width: $screen-sm-max) {
+        margin-top: 10px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        margin-bottom: 25px;
+      }
+      @media(min-width: $screen-lg-min) {
+        margin-bottom: 40px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .date {
+        display: block;
+        float: left;
+        width: 100px;
+        height: 70px;
+        text-align: center;
+        color: #999999;
+        border-right: 2px solid #999999;
+        margin-right: 15px;
+
+        .day {
+          display: block;
+          font-size: 48px;
+          line-height: 50px;
+        }
+
+        @media (min-width: $screen-md-min) {
+          margin-left: -15px;
+        }
+      }
+
+    }
+  }
+}

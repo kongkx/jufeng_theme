@@ -1,0 +1,62 @@
+{
+  "checksum": {
+    "previous": "e495a2b0cbebf6b41e3298de73732c9814d6f7e7e85c2125065b4e1e761ff05b",
+    "current": "e495a2b0cbebf6b41e3298de73732c9814d6f7e7e85c2125065b4e1e761ff05b"
+  },
+  "fonts": [
+    "assets/fonts/jufeng.ttf",
+    "assets/fonts/jufeng.svg",
+    "assets/fonts/jufeng.woff",
+    "assets/fonts/jufeng.eot"
+  ],
+  "glyphs": {
+    "phone": {
+      "codepoint": 61696,
+      "source": "assets/vectors/phone.svg"
+    },
+    "qq": {
+      "codepoint": 61697,
+      "source": "assets/vectors/qq.svg"
+    },
+    "wechat": {
+      "codepoint": 61698,
+      "source": "assets/vectors/wechat.svg"
+    },
+    "weibo": {
+      "codepoint": 61699,
+      "source": "assets/vectors/weibo.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "jufeng",
+    "force": false,
+    "input": {
+      "templates": "assets/vectors",
+      "vectors": "assets/vectors"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "scss/components",
+      "fonts": "assets/fonts",
+      "preview": "assets/fonts"
+    },
+    "preprocessor_path": "../fonts/",
+    "quiet": false,
+    "templates": [
+      "preview",
+      "scss"
+    ]
+  },
+  "templates": [
+    "assets/fonts/jufeng-preview.html",
+    "scss/components/_jufeng.scss"
+  ]
+}

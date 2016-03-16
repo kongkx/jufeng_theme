@@ -1,0 +1,136 @@
+.owl-theme-bootstrap {
+  .owl-item {
+    position: relative;
+    .bg-link {
+      display: block;
+      text-align: center;
+    }
+  }
+  .owl-item {
+    &>div {
+      overflow: hidden;
+    }
+    &>div img {
+      max-width: 100%;
+      height: auto;
+    }
+    .item-content-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        margin-left: 50%;
+        background-color: transparent;
+        vertical-align: middle;
+      }
+    }
+    .item-content {
+      position: relative;
+      left: 100px;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 15px;
+      color: white;
+      background-color: rgba(0,0,0,.3);
+    }
+
+  }
+  .owl-controls {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    .owl-pagination {
+      width: 100%;
+      text-align: center;
+    }
+
+    &.clickable .owl-buttons div:hover{
+      filter: Alpha(Opacity=100);/*IE7 fix*/
+      opacity: 1;
+      text-decoration: none;
+    }
+
+    .owl-buttons div {
+      color: #FFF;
+      position: absolute;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;/*IE7 life-saver */
+      margin: 5px;
+      padding: 3px 10px;
+      font-size: 12px;
+      -webkit-border-radius: $border-radius-base;
+      -moz-border-radius: $border-radius-base;
+      border-radius: $border-radius-base;
+      background: $brand-primary;
+      filter: Alpha(Opacity=50);/*IE7 fix*/
+      opacity: 0.5;
+    }
+
+    .owl-buttons .owl-prev {
+      left: 20px;
+      bottom: 50%;
+    }
+    .owl-buttons .owl-next {
+      right: 20px;
+      bottom: 50%;
+    }
+
+    .owl-page {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;/*IE7 life-saver */
+
+      span {
+        display: block;
+        width: 50px;
+        height: 10px;
+        margin: 5px 5px;
+        filter: Alpha(Opacity=50);/*IE7 fix*/
+        opacity: 0.5;
+        background: $brand-primary;
+      }
+    }
+
+    .owl-page.active span,
+    &.clickable .owl-page:hover span {
+      filter: Alpha(Opacity=100);/*IE7 fix*/
+      opacity: 1;
+    }
+  }
+
+  .owl-page span.owl-numbers{
+    height: auto;
+    width: auto;
+    color: #FFF;
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+}
+
+.owl-theme-product-gallery {
+  margin-top: 10px;
+  .owl-wrapper-outer {
+
+  }
+  .owl-item {
+    img {
+      border: 1px solid #ddd;
+      padding: 2px;
+
+      &.cloudzoom-gallery-active {
+        border: 2px solid $brand-primary;
+      }
+    }
+  }
+}

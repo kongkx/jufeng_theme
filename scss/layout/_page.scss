@@ -1,0 +1,103 @@
+// Page Layout
+// -----------------------------------------------------------------------------
+#top {
+  background-color: #f4f4f4;
+}
+
+#header {
+  p {
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+#page-cover {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  .wrapper {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+
+    &>img {
+      position: relative;
+      left: 100%;
+      margin-left: -200%;
+      height: 500px;
+      width: auto;
+    }
+  }
+
+  @media (max-width : $screen-sm-max) {
+    height: 300px;
+    .wrapper>img {
+      height: 300px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 250px;
+    .wrapper>img {
+      height: 250px;
+    }
+  }
+}
+
+#footer {
+  margin: 0;
+  margin-top: 40px;
+  background-color: #333333;
+  color: white;
+
+  #footer-left {
+    @extend .clearfix;
+    background-color: #292929;
+    padding: 40px 20px;
+
+    .qrcode {
+      .caption {
+        padding: 15px 0;
+        text-align: center;
+        margin-bottom: 0;
+        color: white;
+      }
+    }
+    .qrcode+.qrcode {
+      margin-top: 20px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      .qrcode {
+        width: 50%;
+        float: left;
+      }
+      .qrcode+.qrcode {
+        margin-top: 0px;
+      }
+    }
+
+  }
+
+  #footer-right {
+    .block {
+      padding: 20px 0;
+      border-bottom: 1px solid #222;
+    }
+    .social-links {
+
+      color: #333;
+
+      @extend .pull-right;
+
+      .inner {
+        top: auto;
+        bottom: 110%;
+      }
+    }
+  }
+  .bottom-block {
+    padding: 20px 0;
+  }
+}

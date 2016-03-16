@@ -1,0 +1,42 @@
+name        = jufeng
+description = A theme based on Radix.
+screenshot  = screenshot.png
+core        = 7.x
+
+; Base - Radix
+base theme  = radix
+
+
+; Regions
+regions[topbar_left] = Top Bar Left
+regions[topbar_right] = Top Bar Right
+regions[top] = Top
+regions[content] = Content
+regions[footer_left] = Footer Left
+regions[footer_right] = Footer Right
+
+; Breakpoints
+breakpoints[xs] = (max-width: 767px)
+breakpoints[sm] = (min-width: 768px) and (max-width: 991px)
+breakpoints[md] = (min-width: 992px) and (max-width: 1199px)
+breakpoints[lg] = (min-width: 1200px)
+
+; Panels
+plugins[panels][layouts] = panels/layouts
+plugins[panels][styles] = panels/styles
+
+; CSS - General
+stylesheets[all][]     = assets/css/jufeng.style.css
+
+; Javascript
+scripts[] = assets/js/jufeng.script.js
+
+; Settings
+settings[phone] = 4008-999-999
+
+; Information added by Drupal.org packaging script on 2016-02-01
+version = "7.x-3.3"
+core = "7.x"
+project = "radix"
+datestamp = "1454337570"
+
